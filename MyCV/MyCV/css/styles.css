@@ -1,0 +1,152 @@
+.wrapper {
+  display: flex;
+}
+
+.left-zone {
+  width: 30%; /* đổi từ 25% sang 25vw */
+  background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-zone {
+  width: 70%; /* đổi từ 75% sang 75vw */
+  background-color: #d0a5a551;
+  padding: 1vw;
+}
+.right-zone .heading-line {
+    justify-content: flex-end;
+    padding-right: 2vw;
+}
+
+.avatar-zone {
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    aspect-ratio: 1 / 1; /* Tỷ lệ khung hình 1:1 */
+    margin: 0 auto;
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%; /* Tạo hình tròn */
+    overflow: hidden; /* Ẩn phần tràn ra ngoài */
+    border: #00401a 0.5vw solid; /* Thêm viền cho hình tròn */
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng đổ bóng */
+}
+.avatar-zone img {
+    width: 130%;
+    padding-left: 20%;
+}
+.contact-zone {
+    color: #ccc;
+    padding: 1vw 2vw;
+    list-style-type: none;
+    gap: 5px;
+    font-size: 2vw;
+    text-shadow: #000000 0 0 0.2vw; /* Thêm hiệu ứng đổ bóng cho chữ */
+}
+.Name {
+    font-weight: bold;
+    color: #333;
+    font-size: 4vw;
+}
+.JobTitle {
+    color: #666;
+    margin-top: 0;
+    font-size: 1.7vw;
+}
+.Name, .JobTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    -webkit-text-stroke: 0.1vw rgb(14, 191, 2); /* Thêm viền chữ */
+    text-shadow: #000000 0 0 0.2vw; /* Thêm hiệu ứng đổ bóng cho chữ */
+    }
+h1 {
+    font-size: 3vw;
+    color: #11a137;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2vw;
+    color: #128124;;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 0.05vw #31e890; /* stroke xanh nhạt */
+    text-shadow: #000000 0 0 0.3vw; /* Thêm hiệu ứng đổ bóng cho chữ */
+}
+h3 {
+    font-size: 1.5vw;
+    color: #777;
+}
+.bar {
+    width: 90%;
+    height: 1vw;
+    background-color: hsl(0, 0%, 80%);
+    margin: 1vw;
+    display: flex;
+    border-radius: 3%;
+    overflow: hidden;
+}
+.bar-progress {
+    height: 1vw;
+    max-width: 100%;
+    background-color: #11a137;
+    text-align: center;
+    font-size: 1vw;
+    color: white;
+    line-height: 1vw;
+}
+.bar-name {
+    font-size: 1vw;
+    color: #ffffff;
+    text-shadow: #ccc 0 0 0.1vw;
+}
+.name-zone {
+}
+.skills-container {
+    justify-content: flex-start;
+    gap: 1vw;
+    padding-left:0.5vw;
+}
+.experience-zone {
+    padding: 1vw 2vw 0; 
+}
+
+.expectation-zone {
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+}
+.heading-line {
+    display: flex;
+  justify-content:flex-end;
+  gap: 10px;
+  font-size: 2.5vw;
+  color: #297d0d;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: #31e890 0.05vw;
+  font-weight: bold;
+  box-sizing: border-box;
+  direction: rtl    ;
+}
+
+.heading-line .line {
+    flex-grow: 1;
+  height: 0.3vw;
+  background-color: #ccc;
+  align-self: flex-end;
+  justify-content: flex-start;
+}       
+.achievement-list {
+    padding-left: 2vw;
+}
+.achievement-list li {
+    font-size: 2vw;
+    color: #333;
+    margin-bottom: 0.5vw;
+    
+}
+.year {
+    font-family: 'Courier New', Courier, monospace;
+  color: #297d0d; /* xanh đậm */
+  -webkit-text-stroke: 0.05vw #31e890; /* stroke xanh nhạt */
+  font-weight: bold;
+  font-size: 2.5vw;
+}
