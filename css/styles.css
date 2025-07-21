@@ -1,0 +1,176 @@
+.wrapper {
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    margin: 3vw auto;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url('../images/background.png');
+    background-size: contain;
+    filter: blur(1vw);
+    z-index: -20;
+}
+
+.left-zone {
+    width: 30%;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 0;
+}
+
+.right-zone {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 1vw;
+}
+
+.right-zone .heading-line {
+    justify-content: flex-end;
+    padding-right: 2vw;
+}
+
+.avatar-zone {
+    justify-content: center;
+    display: flex;
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    background-color: rgb(225, 225, 225);
+    border-radius: 50%;
+    overflow: hidden;
+    border: #00ff66 0.5vw solid;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+.avatar-zone img {
+    width: 120%;
+    height: 100%;
+    padding-left: 20%;
+}
+
+.contact-zone {
+    color: #ccc;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    text-shadow: #000000 0 0 0.2vw;
+}
+
+.Name,
+.JobTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(9, 255, 0);
+    -webkit-text-stroke: 0.1vw rgba(0, 0, 0, 0.3);
+    text-shadow: #000000 0 0 0.2vw;
+}
+
+.Name {
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.JobTitle {
+    color: #666;
+    margin-top: 0;
+    font-size: 1.7vw;
+}
+
+h2 {
+    font-size: 2vw;
+    color: #01ff2b;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 0.05vw #202020;
+    text-shadow: #000000 0 0 0.3vw;
+}
+
+.experience-zone {
+    padding: 1vw 2vw 0;
+}
+
+.expectation-zone {
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+}
+
+.heading-line {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 2.5vw;
+    color: #297d0d;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: #31e890 0.05vw;
+    font-weight: bold;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+.heading-line .line {
+    flex-grow: 1;
+    height: 0.3vw;
+    background-color: #ccc;
+    align-self: flex-end;
+}
+
+.achievement-list {
+    padding-left: 2vw;
+}
+
+.achievement-list li {
+    font-size: 2vw;
+    color: #333;
+    margin-bottom: 0.5vw;
+}
+
+.year {
+    font-family: 'Courier New', Courier, monospace;
+    color: #297d0d;
+    -webkit-text-stroke: 0.05vw #31e890;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.skills-container {
+    padding-left: 0.5vw;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: flex-start;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 6px 12px;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: fit-content;
+    max-width: 10vw;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    flex: none;
+}
+
+.skill-tag:hover {
+    background-color: #2c3e50;
+    cursor: default;
+}
