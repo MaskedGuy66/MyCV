@@ -19,15 +19,15 @@
 }
 
 .left-zone {
-    width: 30%;
+    width: 35%;
     background-color: #2e2e2e;
     display: flex;
     flex-direction: column;
-    padding: 2vw 0;
+    padding: 1vw 0;
 }
 
 .right-zone {
-    width: 70%;
+    width: 65%;
     background-color: #ffffff;
     padding: 1vw;
 }
